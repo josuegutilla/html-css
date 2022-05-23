@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)https://iconarchive.com/search?q=cat+black+white -->
+<html class="translated-ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="./iconegatospreto_files/rules-p-31iz6hfFutd16.js.download" async=""></script><script src="./iconegatospreto_files/rules-p-b9Tu_6mjKWqaw.js.download" async=""></script><script type="text/javascript" async="" src="./iconegatospreto_files/analytics.js.download"></script><script src="./iconegatospreto_files/quant.js.download" async="" type="text/javascript"></script><script src="./iconegatospreto_files/quant.js.download" async="" type="text/javascript"></script><script async="" type="text/javascript" src="./iconegatospreto_files/cmp2.js.download"></script><script type="text/javascript" async="" src="./iconegatospreto_files/js"></script><script async="" type="text/javascript" src="./iconegatospreto_files/choice.js.download"></script><script data-ezscrex="false" data-cfasync="false" data-pagespeed-no-defer="">var __ez=__ez||{};__ez.stms=Date.now();__ez.evt={};__ez.script={};__ez.ck=__ez.ck||{};__ez.template={};__ez.template.isOrig=false;__ez.queue=(function(){var count=0,incr=0,items=[],timeDelayFired=false,hpItems=[],lpItems=[],allowLoad=true;var obj={func:function(name,funcName,parameters,isBlock,blockedBy,deleteWhenComplete,proceedIfError){var self=this;this.name=name;this.funcName=funcName;this.parameters=parameters===null?null:(parameters instanceof Array)?parameters:[parameters];this.isBlock=isBlock;this.blockedBy=blockedBy;this.deleteWhenComplete=deleteWhenComplete;this.isError=false;this.isComplete=false;this.isInitialized=false;this.proceedIfError=proceedIfError;this.isTimeDelay=false;this.process=function(){log("... func = "+name);self.isInitialized=true;self.isComplete=true;log("... func.apply: "+name);var funcs=self.funcName.split('.');var func=null;if(funcs.length>3){}else if(funcs.length===3){func=window[funcs[0]][funcs[1]][funcs[2]];}else if(funcs.length===2){func=window[funcs[0]][funcs[1]];}else{func=window[self.funcName];}
+if(typeof func!=='undefined'&&func!==null){func.apply(null,this.parameters);}
+if(self.deleteWhenComplete===true)delete items[name];if(self.isBlock===true){log("----- F'D: "+self.name);processAll();}}},file:function(name,path,isBlock,blockedBy,async,defer,proceedIfError){var self=this;this.name=name;this.path=path;this.async=async;this.defer=defer;this.isBlock=isBlock;this.blockedBy=blockedBy;this.isInitialized=false;this.isError=false;this.isComplete=false;this.proceedIfError=proceedIfError;this.isTimeDelay=false;this.process=function(){self.isInitialized=true;log("... file = "+name);var scr=document.createElement('script');scr.src=path;if(async===true)scr.async=true;else if(defer===true)scr.defer=true;scr.onerror=function(){log("----- ERR'D: "+self.name);self.isError=true;if(self.isBlock===true){processAll();}};scr.onreadystatechange=scr.onload=function(){var state=scr.readyState;log("----- F'D: "+self.name);if((!state||/loaded|complete/.test(state))){self.isComplete=true;if(self.isBlock===true){processAll();}}};document.getElementsByTagName('head')[0].appendChild(scr);}},fileLoaded:function(name,isComplete){this.name=name;this.path="";this.async=false;this.defer=false;this.isBlock=false;this.blockedBy=[];this.isInitialized=true;this.isError=false;this.isComplete=isComplete;this.proceedIfError=false;this.isTimeDelay=false;this.process=function(){};}};function init(){window.addEventListener("load",function(){setTimeout(function(){timeDelayFired=true;log('TDELAY -----');processAll();},5000);},false);}
+function addFile(name,path,isBlock,blockedBy,async,defer,proceedIfError,priority){var item=new obj.file(name,path,isBlock,blockedBy,async,defer,proceedIfError);if(priority===true){hpItems[name]=item}else{lpItems[name]=item}
+items[name]=item;checkIfBlocked(item);}
+function setallowLoad(settobool){allowLoad=settobool}
+function addFunc(name,func,parameters,isBlock,blockedBy,autoInc,deleteWhenComplete,proceedIfError,priority){if(autoInc===true)name=name+"_"+incr++;var item=new obj.func(name,func,parameters,isBlock,blockedBy,deleteWhenComplete,proceedIfError);if(priority===true){hpItems[name]=item}else{lpItems[name]=item}
+items[name]=item;checkIfBlocked(item);}
+function addTimeDelayFile(name,path){var item=new obj.file(name,path,false,[],false,false,true);item.isTimeDelay=true;log(name+' ... '+' FILE! TDELAY');lpItems[name]=item;items[name]=item;checkIfBlocked(item);}
+function addTimeDelayFunc(name,func,parameters){var item=new obj.func(name,func,parameters,false,[],true,true);item.isTimeDelay=true;log(name+' ... '+' FUNCTION! TDELAY');lpItems[name]=item;items[name]=item;checkIfBlocked(item);}
+function checkIfBlocked(item){if(isBlocked(item)===true||allowLoad==false)return;item.process();}
+function isBlocked(item){if(item.isTimeDelay===true&&timeDelayFired===false){log(item.name+" blocked = TIME DELAY!");return true;}
+if(item.blockedBy instanceof Array){for(var i=0;i<item.blockedBy.length;i++){var block=item.blockedBy[i];if(items.hasOwnProperty(block)===false){log(item.name+" blocked = "+block);return true;}else if(item.proceedIfError===true&&items[block].isError===true){return false;}else if(items[block].isComplete===false){log(item.name+" blocked = "+block);return true;}}}
+return false;}
+function markLoaded(filename){if(!filename||0===filename.length){return;}
+if(filename in items){var item=items[filename];if(item.isComplete===true){log(item.name+' '+filename+': error loaded duplicate')}else{item.isComplete=true;item.isInitialized=true;}}else{items[filename]=new obj.fileLoaded(filename,true);}
+log("markLoaded dummyfile: "+items[filename].name);}
+function logWhatsBlocked(){for(var i in items){if(items.hasOwnProperty(i)===false)continue;var item=items[i];isBlocked(item)}}
+function log(msg){var href=window.location.href;var reg=new RegExp('[?&]ezq=([^&#]*)','i');var string=reg.exec(href);var res=string?string[1]:null;if(res==="1")console.debug(msg);}
+function processAll(){count++;if(count>200)return;log("let's go");processItems(hpItems);processItems(lpItems);}
+function processItems(list){for(var i in list){if(list.hasOwnProperty(i)===false)continue;var item=list[i];if(item.isComplete===true||isBlocked(item)||item.isInitialized===true||item.isError===true){if(item.isError===true){log(item.name+': error')}else if(item.isComplete===true){log(item.name+': complete already')}else if(item.isInitialized===true){log(item.name+': initialized already')}}else{item.process();}}}
+init();return{addFile:addFile,addDelayFile:addTimeDelayFile,addFunc:addFunc,addDelayFunc:addTimeDelayFunc,items:items,processAll:processAll,setallowLoad:setallowLoad,markLoaded:markLoaded,logWhatsBlocked:logWhatsBlocked,};})();__ez.evt.add=function(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent?e.attachEvent("on"+t,n):e["on"+t]=n()},__ez.evt.remove=function(e,t,n){e.removeEventListener?e.removeEventListener(t,n,!1):e.detachEvent?e.detachEvent("on"+t,n):delete e["on"+t]};__ez.script.add=function(e){var t=document.createElement("script");t.src=e,t.async=!0,t.type="text/javascript",document.getElementsByTagName("head")[0].appendChild(t)};__ez.dot={};</script>
+<script type="text/javascript">(function(){function storageAvailable(type){var storage;try{storage=window[type];var x='__storage_test__';storage.setItem(x,x);storage.removeItem(x);return true;}
+catch(e){return e instanceof DOMException&&(e.code===22||e.code===1014||e.name==='QuotaExceededError'||e.name==='NS_ERROR_DOM_QUOTA_REACHED')&&(storage&&storage.length!==0);}}
+function remove_ama_config(){if(storageAvailable('localStorage')){localStorage.removeItem("google_ama_config");}}
+remove_ama_config()})()</script>
+<script type="text/javascript">var ezoicTestActive = true</script>
+<script data-ezscrex="false" type="text/javascript" data-cfasync="false">var _ezaq = {"ad_cache_level":1,"ad_count_adjustment":0,"ad_lazyload_version":4,"ad_load_version":1,"ad_location_ids":"","ad_transform_level":0,"adx_ad_count":0,"bidder_method":1,"bidder_version":3,"city":"Palhoca","country":"BR","days_since_last_visit":-1,"display_ad_count":0,"domain_id":233319,"ds_adsize_opt_id":-1,"engaged_time_visit":197,"ezcache_level":0,"ezcache_skip_code":0,"form_factor_id":1,"framework_id":1,"has_bad_image":0,"has_bad_words":0,"iab_category":"","is_from_recommended_pages":false,"is_return_visitor":false,"is_sitespeed":0,"last_page_load":"1649252033636","last_pageview_id":"c555dda2-d6d1-4593-7ba0-437f02f618a8","lt_cache_level":0,"max_ads":0,"metro_code":0,"optimization_version":1,"page_ad_positions":"","page_view_count":6,"page_view_id":"e063990b-2a46-43b9-7fa0-15c002792c18","position_selection_id":39,"postal_code":"88130","pv_event_count":0,"response_size_orig":46949,"response_time_orig":627,"serverid":"15.228.250.191:17299","state":"SC","sub_page_ad_positions":"","t_epoch":1649252051,"template_id":134,"time_on_site_visit":581,"url":"https://iconarchive.com/search?q=cat+black+white","user_id":0,"weather_precipitation":0,"weather_summary":"","weather_temperature":0,"word_count":420,"worst_bad_word_level":0};var _ezim_d = {};var _ezat = {"domain_id":233319,"form_factor_id":1,"framework_id":1,"pageview_date":"2022-04-06","pageview_id":"e063990b-2a46-43b9-7fa0-15c002792c18","template_id":134,"url":"https://iconarchive.com/search?q=cat+black+white","visit_uuid":"b157517e-f3a9-4543-47e3-17925422abc8"};</script><script data-ezscrex="false" data-pagespeed-no-defer="" data-cfasync="false" type="text/javascript">__ez.queue.addFile('banger.js', '/porpoiseant/banger.js?cb=195-0&bv=108&v=57&PageSpeed=off', true, [], true, false, false, true);</script><script src="./iconegatospreto_files/banger.js.download" async=""></script>
+<script data-ezscrex="false" data-cfasync="false" data-pagespeed-no-defer="">__ez.vep=(function(){var pixels=[],pxURL="/detroitchicago/grapefruit.gif";function AddPixel(vID,pixelData){if(__ez.dot.isDefined(vID)&&__ez.dot.isValid(pixelData)){pixels.push({type:'video',video_impression_id:vID,domain_id:__ez.dot.getDID(),t_epoch:__ez.dot.getEpoch(0),data:__ez.dot.dataToStr(pixelData)});}}
+function Fire(){if(typeof document.visibilityState!=='undefined'&&document.visibilityState==="prerender"){return;}
+if(__ez.dot.isDefined(pixels)&&pixels.length>0){while(pixels.length>0){var j=5;if(j>pixels.length){j=pixels.length;}
+var pushPixels=pixels.splice(0,j);var pixelURL=__ez.dot.getURL(pxURL)+"?orig="+(__ez.template.isOrig===true?1:0)+"&v="+btoa(JSON.stringify(pushPixels));__ez.dot.Fire(pixelURL);}}
+pixels=[];}
+return{Add:AddPixel,Fire:Fire};})();</script><script data-ezscrex="false" data-cfasync="false" data-pagespeed-no-defer="">__ez.pel=(function(){var pixels=[],pxURL="/porpoiseant/army.gif";function AddAndFirePixel(adSlot,pixelData){AddPixel(adSlot,pixelData,0,0,0,0,0);Fire();}
+function AddAndFireOrigPixel(adSlot,pixelData){AddPixel(adSlot,pixelData,0,0,0,0,0,true);Fire();}
+function GetCurrentPixels(){return pixels;}
+function AddPixel(adSlot,pixelData,revenue,est_revenue,bid_floor_filled,bid_floor_prev,stat_source_id,isOrig){if(!__ez.dot.isDefined(adSlot)||__ez.dot.isAnyDefined(adSlot.getSlotElementId,adSlot.ElementId)==false){return;}
+if(typeof isOrig==='undefined'){isOrig=false;}
+var ad_position_id=parseInt(__ez.dot.getTargeting(adSlot,'ap'));var impId=__ez.dot.getSlotIID(adSlot),adUnit=__ez.dot.getAdUnit(adSlot,isOrig);var compId=parseInt(__ez.dot.getTargeting(adSlot,"compid"));var lineItemId=0;var creativeId=0;var ezimData=getEzimData(adSlot);if(typeof ezimData=='object'){if(ezimData.creative_id!==undefined){creativeId=ezimData.creative_id;}
+if(ezimData.line_item_id!==undefined){lineItemId=ezimData.line_item_id;}}
+if(__ez.dot.isDefined(impId,adUnit)&&__ez.dot.isValid(pixelData)){if((impId!=="0"||isOrig===true)&&adUnit!==""){pixels.push({type:"impression",impression_id:impId,domain_id:__ez.dot.getDID(),unit:adUnit,t_epoch:__ez.dot.getEpoch(0),revenue:revenue,est_revenue:est_revenue,ad_position:ad_position_id,ad_size:"",bid_floor_filled:bid_floor_filled,bid_floor_prev:bid_floor_prev,stat_source_id:stat_source_id,country_code:__ez.dot.getCC(),pageview_id:__ez.dot.getPageviewId(),comp_id:compId,line_item_id:lineItemId,creative_id:creativeId,data:__ez.dot.dataToStr(pixelData),is_orig:isOrig||__ez.template.isOrig,});}}}
+function AddPixelById(impFullId,pixelData,isOrig,revenue){var vals=impFullId.split('/');if(__ez.dot.isDefined(impFullId)&&vals.length===3&&__ez.dot.isValid(pixelData)){var adUnit=vals[0],impId=vals[2];var pix={type:"impression",impression_id:impId,domain_id:__ez.dot.getDID(),unit:adUnit,t_epoch:__ez.dot.getEpoch(0),pageview_id:__ez.dot.getPageviewId(),data:__ez.dot.dataToStr(pixelData),is_orig:isOrig||__ez.template.isOrig};if(typeof revenue!=='undefined'){pix.revenue=revenue;}
+pixels.push(pix);}}
+function Fire(){if(typeof document.visibilityState!=='undefined'&&document.visibilityState==="prerender")return;if(__ez.dot.isDefined(pixels)&&pixels.length>0){var allPixels=[pixels.filter(function(pixel){return pixel.is_orig}),pixels.filter(function(pixel){return!pixel.is_orig})];allPixels.forEach(function(pixels){while(pixels.length>0){var isOrig=pixels[0].is_orig||false;var j=5;if(j>pixels.length){j=pixels.length;}
+var pushPixels=pixels.splice(0,j);var pixelURL=__ez.dot.getURL(pxURL)+"?orig="+(isOrig===true?1:0)+"&sts="+btoa(JSON.stringify(pushPixels));if(typeof window.isAmp!=='undefined'&&isAmp&&typeof window._ezaq!=='undefined'&&_ezaq.hasOwnProperty("domain_id")){pixelURL+="&visit_uuid="+_ezaq['visit_uuid'];}
+__ez.dot.Fire(pixelURL);}});}
+pixels=[];}
+function getEzimData(adSlot){if(typeof _ezim_d=="undefined"){return false;}
+var adUnitName=__ez.dot.getAdUnitPath(adSlot).split('/').pop();if(typeof _ezim_d==='object'&&_ezim_d.hasOwnProperty(adUnitName)){return _ezim_d[adUnitName];}
+for(var ezimKey in _ezim_d){if(ezimKey.split('/').pop()===adUnitName){return _ezim_d[ezimKey];}}
+return false;}
+return{Add:AddPixel,AddAndFire:AddAndFirePixel,AddAndFireOrig:AddAndFireOrigPixel,AddById:AddPixelById,Fire:Fire,GetPixels:GetCurrentPixels,};})();</script>
+
+
+<title>Ícones de gato preto e branco - Baixe 1425 Ícones de gato preto e branco grátis aqui</title>
+
+<!-- Quantcast Choice. Consent Manager Tag v2.0 (for TCF 2.0) -->
+<script type="text/javascript" async="true">
+(function() {
+  var host = window.location.hostname;
+  var element = document.createElement('script');
+  var firstScript = document.getElementsByTagName('script')[0];
+  var url = 'https://quantcast.mgr.consensu.org'
+    .concat('/choice/', 'b9Tu_6mjKWqaw', '/', host, '/choice.js')
+  var uspTries = 0;
+  var uspTriesLimit = 3;
+  element.async = true;
+  element.type = 'text/javascript';
+  element.src = url;
+
+  firstScript.parentNode.insertBefore(element, firstScript);
+
+  function makeStub() {
+    var TCF_LOCATOR_NAME = '__tcfapiLocator';
+    var queue = [];
+    var win = window;
+    var cmpFrame;
+
+    function addFrame() {
+      var doc = win.document;
+      var otherCMP = !!(win.frames[TCF_LOCATOR_NAME]);
+
+      if (!otherCMP) {
+        if (doc.body) {
+          var iframe = doc.createElement('iframe');
+
+          iframe.style.cssText = 'display:none';
+          iframe.name = TCF_LOCATOR_NAME;
+          doc.body.appendChild(iframe);
+        } else {
+          setTimeout(addFrame, 5);
+        }
+      }
+      return !otherCMP;
+    }
+
+    function tcfAPIHandler() {
+      var gdprApplies;
+      var args = arguments;
+
+      if (!args.length) {
+        return queue;
+      } else if (args[0] === 'setGdprApplies') {
+        if (
+          args.length > 3 &&
+          args[2] === 2 &&
+          typeof args[3] === 'boolean'
+        ) {
+          gdprApplies = args[3];
+          if (typeof args[2] === 'function') {
+            args[2]('set', true);
+          }
+        }
+      } else if (args[0] === 'ping') {
+        var retr = {
+          gdprApplies: gdprApplies,
+          cmpLoaded: false,
+          cmpStatus: 'stub'
+        };
+
+        if (typeof args[2] === 'function') {
+          args[2](retr);
+        }
+      } else {
+        queue.push(args);
+      }
+    }
+
+    function postMessageEventHandler(event) {
+      var msgIsString = typeof event.data === 'string';
+      var json = {};
+
+      try {
+        if (msgIsString) {
+          json = JSON.parse(event.data);
+        } else {
+          json = event.data;
+        }
+      } catch (ignore) {}
+
+      var payload = json.__tcfapiCall;
+
+      if (payload) {
+        window.__tcfapi(
+          payload.command,
+          payload.version,
+          function(retValue, success) {
+            var returnMsg = {
+              __tcfapiReturn: {
+                returnValue: retValue,
+                success: success,
+                callId: payload.callId
+              }
+            };
+            if (msgIsString) {
+              returnMsg = JSON.stringify(returnMsg);
+            }
+            event.source.postMessage(returnMsg, '*');
+          },
+          payload.parameter
+        );
+      }
+    }
+
+    while (win) {
+      try {
+        if (win.frames[TCF_LOCATOR_NAME]) {
+          cmpFrame = win;
+          break;
+        }
+      } catch (ignore) {}
+
+      if (win === window.top) {
+        break;
+      }
+      win = win.parent;
+    }
+    if (!cmpFrame) {
+      addFrame();
+      win.__tcfapi = tcfAPIHandler;
+      win.addEventListener('message', postMessageEventHandler, false);
+    }
+  };
+
+  makeStub();
+
+  var uspStubFunction = function() {
+    var arg = arguments;
+    if (typeof window.__uspapi !== uspStubFunction) {
+      setTimeout(function() {
+        if (typeof window.__uspapi !== 'undefined') {
+          window.__uspapi.apply(window.__uspapi, arg);
+        }
+      }, 500);
+    }
+  };
+
+  var checkIfUspIsReady = function() {
+    uspTries++;
+    if (window.__uspapi === uspStubFunction && uspTries < uspTriesLimit) {
+      console.warn('USP is not accessible');
+    } else {
+      clearInterval(uspInterval);
+    }
+  };
+
+  if (typeof window.__uspapi === 'undefined') {
+    window.__uspapi = uspStubFunction;
+    var uspInterval = setInterval(checkIfUspIsReady, 6000);
+  }
+})();
+</script>
+<!-- End Quantcast Choice. Consent Manager Tag v2.0 (for TCF 2.0) -->
+
+
+<meta name="keywords" content="cat black white icon, cat black white icons, free cat black white icon, download cat black white icon, free cat black white icons, download cat black white icons">
+<meta name="description" content="Cat black white Icons - Download 1425 Free Cat black white icons @ IconArchive. Search more than 600,000 icons for Web &amp; Desktop here.">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="./iconegatospreto_files/js(1)"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-6648331-1');
+</script>
+
+<link rel="shortcut icon" href="https://iconarchive.com/favicon.ico">
+<link rel="icon" sizes="16x16" type="image/png" href="https://iconarchive.com/favicon-16x16.png">
+<link rel="icon" sizes="32x32" type="image/png" href="https://iconarchive.com/favicon-32x32.png">
+<link rel="icon" sizes="48x48" type="image/png" href="https://iconarchive.com/favicon-48x48.png">
+<link rel="icon" sizes="128x128" type="image/png" href="https://iconarchive.com/favicon-128x128.png">
+<link rel="icon" sizes="196x196" type="image/png" href="https://iconarchive.com/favicon-196x196.png">
+<link rel="apple-touch-icon" sizes="57x57" href="https://iconarchive.com/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://iconarchive.com/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://iconarchive.com/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://iconarchive.com/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://iconarchive.com/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://iconarchive.com/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://iconarchive.com/apple-touch-icon-152x152.png">
+<meta name="msapplication-TileColor" content="#4466ae">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+
+<link rel="canonical" href="https://iconarchive.com/tag/cat-black-white">
+<!--link rel="stylesheet" href="https://static.iconarchive.com/static/css/responsive.css" type="text/css" /-->
+<link rel="stylesheet" href="./iconegatospreto_files/iconarchive.css" type="text/css">
+
+<script type="text/javascript">
+var baseurl = "/";
+var MyFileServer = "https://icons.iconarchive.com";
+var TmpTestServerIconPath = "";
+var userlogin = "0";
+var homepage = "0";
+</script>
+
+
+
+
+
+
+<style id="ezoicCSS">.ezoic-ad{display:inline-block;border:0px;}.ezoic-ad>div>iframe{margin:0px!important;padding:0px!important;}
+.adtester-container-116,.adtester-container-117,.adtester-container-115,.adtester-container-109,.adtester-container-120,.adtester-container-123,.adtester-container-104,.adtester-container-122,.adtester-container-107,.adtester-container-102,.adtester-container-103,.adtester-container-106,.adtester-container-105,.adtester-container-111,.adtester-container-121,.adtester-container-128,.adtester-container-129,.adtester-container-101,.adtester-container-130,.adtester-container-100,.adtester-container-124,.adtester-container-113,.adtester-container-119,.adtester-container-108,.adtester-container-131{display:none!important}
+.ezoic-floating-bottom { display: none!important; }</style><script type="text/javascript">var ezouid = "1";</script><!--<base href="https://iconarchive.com/search?q=cat+black+white">--><base href="."><script type="text/javascript">
+var ezoTemplate = 'pub_site';
+if(typeof ezouid == 'undefined')
+{
+    var ezouid = 'none';
+}
+var ezoFormfactor = '1';
+var ezo_elements_to_check = Array();
+</script><!-- START EZHEAD -->
+<script data-ezscrex="false" type="text/javascript">
+var soc_app_id = '0';
+var did = 233319;
+var ezdomain = 'iconarchive.com';
+var ezoicSearchable = 1;
+</script>
+<!--{jquery}-->
+<!-- END EZHEAD -->
+<script data-ezscrex="false" data-pagespeed-no-defer="" data-cfasync="false">
+function create_ezolpl(pvID, rv) {
+    var d = new Date();
+    d.setTime(d.getTime() + (365*24*60*60*1000));
+    var expires = "expires="+d.toUTCString();
+    __ez.ck.setByCat("ezux_lpl_233319=" + new Date().getTime() + "|" + pvID + "|" + rv + "; " + expires, 3);
+}
+function attach_ezolpl(pvID, rv) {
+    if (document.readyState === "complete") {
+        create_ezolpl(pvID, rv);
+    }
+    if(window.attachEvent) {
+        window.attachEvent("onload", create_ezolpl, pvID, rv);
+    } else {
+        if(window.onload) {
+            var curronload = window.onload;
+            var newonload = function(evt) {
+                curronload(evt);
+                create_ezolpl(pvID, rv);
+            };
+            window.onload = newonload;
+        } else {
+            window.onload = create_ezolpl.bind(null, pvID, rv);
+        }
+    }
+}
+
+__ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", ["e063990b-2a46-43b9-7fa0-15c002792c18", "false"], false, ['/detroitchicago/boise.js'], true, false, false, false);
+</script>
+<script type="text/javascript">var _audins_dom="iconarchive_com",_audins_did=233319;__ez.queue.addFile('/detroitchicago/cmbv2.js', '/detroitchicago/cmbv2.js?gcb=195-0&cb=04-1y02-5y06-12y07-1y0b-5y0d-14y13-3y17-4y21-3y2d-2y55-1&cmbcb=39&sj=x04x02x06x07x0bx0dx13x17x21x2dx55', true, [], true, false, true, false);</script><script src="./iconegatospreto_files/cmbv2.js.download" async=""></script>
+<script type="text/javascript" defer="">__ez.queue.addFile('/detroitchicago/cmbdv2.js', '/detroitchicago/cmbdv2.js?gcb=195-0&cb=03-5y0c-5y18-4&cmbcb=39&sj=x03x0cx18', true, ['/detroitchicago/cmbv2.js'], true, false, true, false);</script><script type="text/javascript" async="" src="./iconegatospreto_files/bsa.js.download"></script><div id="_bsa_srv-CKYI6237_0"></div><script src="./iconegatospreto_files/nmash.js.download"></script><style type="text/css"> .qc-cmp-button.qc-cmp-secondary-button:hover {    background-color: #368bd6 !important;    border-color: transparent !important;  }  .qc-cmp-button.qc-cmp-secondary-button:hover {    color: #ffffff !important;  }  .qc-cmp-button.qc-cmp-secondary-button {    color: #368bd6 !important;  }  .qc-cmp-button.qc-cmp-secondary-button {    background-color: #eee !important;    border-color: transparent !important;  } </style><script src="./iconegatospreto_files/cmbdv2.js.download" async=""></script><link type="text/css" rel="stylesheet" charset="UTF-8" href="./iconegatospreto_files/translateelement.css"></head>
+<body>
+
+<!-- BuySellAds.com Ad Code -->
+<script type="text/javascript">
+(function(){
+  var bsa = document.createElement('script');
+     bsa.type = 'text/javascript';
+     bsa.async = true;
+     bsa.src = '//s3.buysellads.com/ac/bsa.js';
+  (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);
+})();
+</script>
+<!-- End BuySellAds.com Ad Code -->
+
+<script src="./iconegatospreto_files/monetization.js.download" type="text/javascript"></script>
+<script>
+  (function(){
+    if(typeof _bsa !== 'undefined' && _bsa) {
+      _bsa.init('flexbar', 'CKYI6237', 'placement:wwwiconarchivecom');
+    }
+  })();
+</script>
+
+
+
+
+<div id="metanav-background">
+<div id="metanav-allcontent">
+<div id="metanav-logo"><a href="https://iconarchive.com/" rel="nofollow"><img src="./iconegatospreto_files/logo.png" alt="Arquivo de ícones - ótimos ícones para Win, Mac e Linux" width="307" height="57"></a></div>
+<div id="metanav-search"><form action="https://iconarchive.com/search" method="get"><input type="text" name="q" value="cat black white" id="metanav-search-field" style="background-color:#f7f8e8;border-width:2px 0 2px 2px;height:24px;width:280px;"><div id="metanav-search-submit"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Procurar</font></font></div></form></div>
+
+<div class="clear"></div>
+
+<ul id="topnav">
+	<li><a href="https://iconarchive.com/browse.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Navegue ▼</font></font></a>
+    <div class="topnavsub-category">
+        <ul style="width:210px;">
+        <li><a href="https://iconarchive.com/alphabet-list.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Por alfabeto</font></font></a></li>
+        <li><a href="https://iconarchive.com/news.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Conjuntos mais recentes</font></font></a></li>
+        <li><a href="https://iconarchive.com/popular.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Conjuntos populares</font></font></a></li>
+        <li><a href="https://iconarchive.com/svg-icons.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Conjuntos de vetores SVG</font></font></a></li>
+        <li><a href="https://iconarchive.com/visited.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Conjuntos mais visitados</font></font></a></li>
+        <li><a href="https://iconarchive.com/largest.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Maiores conjuntos</font></font></a></li>
+		<li><a href="https://iconarchive.com/highres.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Resolução mais alta</font></font></a></li>        
+        <li><a href="https://iconarchive.com/outstanding.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Conjuntos pendentes</font></font></a></li>
+        <li><a href="https://iconarchive.com/randomsets.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Conjuntos aleatórios</font></font></a></li>
+        <li><a href="https://iconarchive.com/random.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ícones aleatórios</font></font></a></li>
+        <li><a href="https://iconarchive.com/categories.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Categorias</font></font></a></li>
+        <li><a href="https://iconarchive.com/artists.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Artistas</font></font></a></li>
+        <li><a href="https://iconarchive.com/tags.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tag</font></font></a></li>
+        <li><a href="https://iconarchive.com/pixelart.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pixelart (estilo clássico)</font></font></a></li>
+        <li><a href="https://iconarchive.com/commercialfree.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Licença: Livre comercial</font></font></a></li>
+        </ul>
+    </div>
+    </li>
+	<li><a href="https://iconarchive.com/news.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">O mais novo</font></font></a></li>
+	<li><a href="https://iconarchive.com/popular.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Popular</font></font></a></li>
+	<li><a href="https://iconarchive.com/svg-icons.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ícones SVG</font></font></a></li>
+	<li><a href="https://iconarchive.com/random.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Aleatória</font></font></a></li>
+	<li><a href="https://iconarchive.com/categories.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Categorias ▼</font></font></a>
+    <div class="topnavsub-category">
+        <ul>
+        <li><a href="https://iconarchive.com/category/adobe-icons.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ícones da Adobe</font></font></a></li>
+        <li><a href="https://iconarchive.com/category/alphabet-icons.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ícones do alfabeto</font></font></a></li>
+        <li><a href="https://iconarchive.com/category/animals-icons.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ícones de animais</font></font></a></li>
+        <li><a href="https://iconarchive.com/category/apple-icons.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ícones da Apple</font></font></a></li>
+        <li><a href="https://iconarchive.com/category/application-icons.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ícones de aplicativos</font></font></a></li>
+        <li><a href="https://iconarchive.com/category/art-icons.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ícones de arte</font></font></a></li>
+        <li><a href="https://iconarchive.com/category/avatar-icons.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ícones de avatar</font></font></a></li>
+        <li><a href="https://iconarchive.com/category/buildings-icons.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ícones de edifícios</font></font></a></li>
+        <li><a href="https://iconarchive.com/category/business-icons.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ícones de negócios</font></font></a></li>
+        <li><a href="https://iconarchive.com/category/cartoon-icons.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ícones de desenhos animados</font></font></a></li>
+        <li><a href="https://iconarchive.com/category/christmas-icons.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ícones de Natal</font></font></a></li>
+        <li><a href="https://iconarchive.com/category/computer-icons.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ícones de computador</font></font></a></li>
+        <li><a href="https://iconarchive.com/category/culture-icons.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ícones de cultura</font></font></a></li>
+        <li><a href="https://iconarchive.com/category/drive-icons.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ícones do Drive</font></font></a></li>
+        <li><a href="https://iconarchive.com/category/easter-icons.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ícones de Páscoa</font></font></a></li>
+        <li><a href="https://iconarchive.com/category/emo-icons.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ícones Emo</font></font></a></li>
+        </ul>
+        <ul>
+        <li><a href="https://iconarchive.com/category/emoji-icons.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ícones de emojis</font></font></a></li>
+        <li><a href="https://iconarchive.com/category/flag-icons.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ícones de sinalização</font></font></a></li>
+        <li><a href="https://iconarchive.com/category/folder-icons.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ícones de pasta</font></font></a></li>
+        <li><a href="https://iconarchive.com/category/food-icons.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ícones de comida</font></font></a></li>
+        <li><a href="https://iconarchive.com/category/funny-icons.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ícones engraçados</font></font></a></li>
+        <li><a href="https://iconarchive.com/category/game-icons.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ícones do jogo</font></font></a></li>
+        <li><a href="https://iconarchive.com/category/halloween-icons.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ícones do Dia das Bruxas</font></font></a></li>
+        <li><a href="https://iconarchive.com/category/handdrawn-icons.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ícones desenhados à mão</font></font></a></li>
+        <li><a href="https://iconarchive.com/category/holiday-icons.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ícones de férias</font></font></a></li>
+        <li><a href="https://iconarchive.com/category/kid-icons.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ícones infantis</font></font></a></li>
+        <li><a href="https://iconarchive.com/category/lifestyle-icons.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ícones de estilo de vida</font></font></a></li>
+        <li><a href="https://iconarchive.com/category/love-icons.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ícones de amor</font></font></a></li>
+        <li><a href="https://iconarchive.com/category/media-icons.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ícones de mídia</font></font></a></li>
+        <li><a href="https://iconarchive.com/category/medical-icons.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ícones médicos</font></font></a></li>
+        <li><a href="https://iconarchive.com/category/microsoft-icons.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ícones da Microsoft</font></font></a></li>
+        <li><a href="https://iconarchive.com/category/mini-icons.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Miniícones</font></font></a></li>
+        </ul>
+        <ul>
+        <li><a href="https://iconarchive.com/category/mobile-icons.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ícones móveis</font></font></a></li>
+        <li><a href="https://iconarchive.com/category/music-icons.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ícones de música</font></font></a></li>
+        <li><a href="https://iconarchive.com/category/nature-icons.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ícones da natureza</font></font></a></li>
+        <li><a href="https://iconarchive.com/category/object-icons.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ícones de objetos</font></font></a></li>
+        <li><a href="https://iconarchive.com/category/people-icons.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ícones de pessoas</font></font></a></li>
+        <li><a href="https://iconarchive.com/category/photographic-icons.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ícones fotográficos</font></font></a></li>
+        <li><a href="https://iconarchive.com/category/places-icons.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ícones de lugares</font></font></a></li>
+        <li><a href="https://iconarchive.com/category/scifi-icons.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ícones de ficção científica</font></font></a></li>
+        <li><a href="https://iconarchive.com/category/social-network-icons.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ícones de redes sociais</font></font></a></li>
+        <li><a href="https://iconarchive.com/category/sport-icons.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ícones do esporte</font></font></a></li>
+        <li><a href="https://iconarchive.com/category/system-icons.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ícones do sistema</font></font></a></li>
+        <li><a href="https://iconarchive.com/category/technology-icons.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ícones de tecnologia</font></font></a></li>
+        <li><a href="https://iconarchive.com/category/transport-icons.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ícones de transporte</font></font></a></li>
+        <li><a href="https://iconarchive.com/category/movie-icons.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ícones de TV e filmes</font></font></a></li>
+        <li><a href="https://iconarchive.com/category/vintage-icons.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ícones antigos</font></font></a></li>
+        </ul>
+    </div>
+    </li>
+	<li><a href="https://iconarchive.com/artists.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Artistas</font></font></a></li>
+	<li class="last"><a href="https://iconarchive.com/mydesk.html" class="red"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">♥ Meus favoritos</font></font></a></li>
+<div class="clear"></div>
+</ul>
+
+</div> <!--metanav-allcontent-->
+</div><iframe name="__tcfapiLocator" style="display: none;" src="./iconegatospreto_files/saved_resource.html"></iframe> <!--metanav-background-->
+<!-- End of all divs -->
+<div id="allcontent" style="max-width:none;">
+
+
+<div id="layout-search-filter">
+	<div class="filter-header" style="border-top:0px;border-radius:0px 3px 0px 0px;-moz-border-radius:0px 3px 0px 0px;-webkit-border-radius:0px 3px 0px 0px;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tela</font></font></div>
+	<div class="settings-display">
+		<div class="settings-display-row">
+			<div class="settings-display-row-content"><a href="https://iconarchive.com/search?q=cat+black+white&amp;items=min&amp;page=1"><div class="display-ipp-min"></div></a><a href="https://iconarchive.com/search?q=cat+black+white&amp;items=default&amp;page=1"><div class="display-ipp-default active"></div></a><a href="https://iconarchive.com/search?q=cat+black+white&amp;items=max&amp;page=1"><div class="display-ipp-max"></div></a><div class="clear"></div></div>
+			<div class="settings-display-row-head"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ícones por página:</font></font></div>
+			<div class="clear"></div>
+		</div>
+		<div class="settings-display-row">
+			<div class="settings-display-row-content"><input class="color" value="" onchange="$(&#39;.icondetail&#39;).css(&#39;background-color&#39;,&#39;#&#39;+this.color);configuser[&#39;display_bgcolor&#39;]=&#39;#&#39;+this.color;saveArray(&#39;configuser&#39;,configuser);" onmouseover="$(&#39;input.color&#39;).css(&#39;color&#39;,&#39;#&#39;+this.color);" autocomplete="off" style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);"></div>
+			<div class="settings-display-row-head"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cor de fundo:</font></font></div>
+			<div class="clear"></div>
+		</div>
+
+			<div class="settings-display-row">
+				<div class="settings-display-row-content">
+					<div class="filter-dropdown" style="width:120px;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+					Tamanho
+					</font></font><ul style="width:130px;"><li><a href="https://iconarchive.com/search?q=cat+black+white&amp;sort=size&amp;color=all&amp;page=1" class="active"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tamanho</font></font></a></li><li><a href="https://iconarchive.com/search?q=cat+black+white&amp;sort=popularity&amp;color=all&amp;page=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Popularidade</font></font></a></li><li><a href="https://iconarchive.com/search?q=cat+black+white&amp;sort=date&amp;color=all&amp;page=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Data de submissão</font></font></a></li><li><a href="https://iconarchive.com/search?q=cat+black+white&amp;sort=color&amp;color=red&amp;page=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cor especificada</font></font></a></li>
+					</ul>
+					</div>
+				</div>
+				<div class="settings-display-row-head"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ordenar por</font></font></div>
+				<div class="clear"></div>
+			</div>
+<div class="settings-display-row">
+				<div class="settings-display-row-content" style="height:auto;">
+					<div class="settings-display-color"><a href="https://iconarchive.com/search?q=cat+black+white&amp;sort=color&amp;color=red&amp;page=1"><div id="red" title="vermelho" style="background-color:#CC0000"></div></a><a href="https://iconarchive.com/search?q=cat+black+white&amp;sort=color&amp;color=orange&amp;page=1"><div id="orange" title="laranja" style="background-color:#FB940B"></div></a><a href="https://iconarchive.com/search?q=cat+black+white&amp;sort=color&amp;color=yellow&amp;page=1"><div id="yellow" title="Amarelo" style="background-color:#FFFF00"></div></a><a href="https://iconarchive.com/search?q=cat+black+white&amp;sort=color&amp;color=green&amp;page=1"><div id="green" title="Verde" style="background-color:#00CC00"></div></a><a href="https://iconarchive.com/search?q=cat+black+white&amp;sort=color&amp;color=cyan&amp;page=1"><div id="cyan" title="Ciano" style="background-color:#03C0C6"></div></a><a href="https://iconarchive.com/search?q=cat+black+white&amp;sort=color&amp;color=blue&amp;page=1"><div id="blue" title="Azul" style="background-color:#0930F2"></div></a><a href="https://iconarchive.com/search?q=cat+black+white&amp;sort=color&amp;color=purple&amp;page=1"><div id="purple" title="Roxa" style="background-color:#762CA7"></div></a><a href="https://iconarchive.com/search?q=cat+black+white&amp;sort=color&amp;color=pink&amp;page=1"><div id="pink" title="Cor de rosa" style="background-color:#FF98BF"></div></a><a href="https://iconarchive.com/search?q=cat+black+white&amp;sort=color&amp;color=white&amp;page=1"><div id="white" title="Branco" style="background-color:#FFFFFF"></div></a><a href="https://iconarchive.com/search?q=cat+black+white&amp;sort=color&amp;color=gray&amp;page=1"><div id="gray" title="cinza" style="background-color:#999999"></div></a><a href="https://iconarchive.com/search?q=cat+black+white&amp;sort=color&amp;color=black&amp;page=1"><div id="black" title="Preto" style="background-color:#000000"></div></a><a href="https://iconarchive.com/search?q=cat+black+white&amp;sort=color&amp;color=brown&amp;page=1"><div id="brown" title="Castanho" style="background-color:#88551A"></div></a><a href="https://iconarchive.com/search?q=cat+black+white&amp;sort=size&amp;color=all&amp;page=1" class="active"><div title="Todas as cores" class="settings-display-color-all"></div></a><div style="display:inline-block;height:auto;width:auto;margin:2px;vertical-align:top;padding-top:6px;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Todas as cores</font></font></div>
+					</div>
+				</div>
+				<div class="settings-display-row-head"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cor:</font></font></div>
+				<div class="clear"></div>
+			</div>
+
+	</div>
+
+	<div class="filter-header"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Filtros de pesquisa</font></font></div>
+	<div class="settings-display">
+		<div class="settings-display-row">
+			<div class="settings-display-row-content">
+				<div class="filter-dropdown" style="width:140px;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+				Todo
+				</font></font><ul style="width:150px;">
+			<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;res=all&amp;page=1" class="active"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Todo</font></font></a></li>
+				<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;res=small&amp;page=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ícones pequenos [0-48px]</font></font></a></li>
+				<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;res=medium&amp;page=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ícones médios [64-128]</font></font></a></li>
+				<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;res=large&amp;page=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ícones grandes [128-512]</font></font></a></li>
+				<li><a href="https://iconarchive.com/search?q=cat+black+white#" class="subheader"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Resoluções exatas:</font></font></a></li>
+				<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;res=16&amp;page=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">16 x 16 pixels</font></font></a></li>
+				<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;res=24&amp;page=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">24 x 24 pixels</font></font></a></li>
+				<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;res=32&amp;page=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">32 x 32 pixels</font></font></a></li>
+				<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;res=48&amp;page=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">48 x 48 pixels</font></font></a></li>
+				<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;res=64&amp;page=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">64 x 64 pixels</font></font></a></li>
+				<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;res=128&amp;page=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">128 x 128 pixels</font></font></a></li>
+				<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;res=256&amp;page=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">256 x 256 pixels</font></font></a></li>
+				<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;res=512&amp;page=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">512 x 512 pixels</font></font></a></li>
+				
+				</ul>
+				</div>
+			</div>
+			<div class="settings-display-row-head"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tamanho:</font></font></div>
+			<div class="clear"></div>
+		</div>
+
+		<div class="settings-display-row">
+			<div class="settings-display-row-content">
+				<div class="filter-dropdown" style="width:110px;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+				Todo
+				</font></font><ul style="width:120px;">
+			<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;cat=all&amp;page=1" class="active"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Todo</font></font></a></li>
+				<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;cat=adobe&amp;page=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Adobe</font></font></a></li>
+				<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;cat=alphabet&amp;page=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Alfabeto</font></font></a></li>
+				<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;cat=animals&amp;page=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Animais</font></font></a></li>
+				<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;cat=apple&amp;page=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">maçã</font></font></a></li>
+				<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;cat=application&amp;page=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Inscrição</font></font></a></li>
+				<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;cat=art&amp;page=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Arte</font></font></a></li>
+				<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;cat=avatar&amp;page=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Avatar</font></font></a></li>
+				<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;cat=buildings&amp;page=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Edifícios</font></font></a></li>
+				<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;cat=business&amp;page=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">O negócio</font></font></a></li>
+				<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;cat=cartoon&amp;page=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Desenho animado</font></font></a></li>
+				<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;cat=christmas&amp;page=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Natal</font></font></a></li>
+				<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;cat=computer&amp;page=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Computador</font></font></a></li>
+				<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;cat=culture&amp;page=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cultura</font></font></a></li>
+				<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;cat=drive&amp;page=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Dirigir</font></font></a></li>
+				<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;cat=easter&amp;page=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Páscoa</font></font></a></li>
+				<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;cat=emo&amp;page=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Emo</font></font></a></li>
+				<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;cat=flag&amp;page=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bandeira</font></font></a></li>
+				<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;cat=folder&amp;page=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pasta</font></font></a></li>
+				<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;cat=food&amp;page=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Comida</font></font></a></li>
+				<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;cat=funny&amp;page=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Engraçado</font></font></a></li>
+				<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;cat=game&amp;page=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Jogo</font></font></a></li>
+				<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;cat=halloween&amp;page=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">dia das Bruxas</font></font></a></li>
+				<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;cat=handdrawn&amp;page=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Desenhado à mão</font></font></a></li>
+				<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;cat=holiday&amp;page=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Feriado</font></font></a></li>
+				<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;cat=kid&amp;page=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Criança</font></font></a></li>
+				<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;cat=lifestyle&amp;page=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Estilo de vida</font></font></a></li>
+				<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;cat=love&amp;page=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Amar</font></font></a></li>
+				<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;cat=media&amp;page=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">meios de comunicação</font></font></a></li>
+				<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;cat=medical&amp;page=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Médico</font></font></a></li>
+				<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;cat=microsoft&amp;page=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Microsoft</font></font></a></li>
+				<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;cat=mini&amp;page=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mini</font></font></a></li>
+				<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;cat=mobile&amp;page=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Móvel</font></font></a></li>
+				<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;cat=music&amp;page=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Música</font></font></a></li>
+				<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;cat=nature&amp;page=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Natureza</font></font></a></li>
+				<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;cat=object&amp;page=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Objeto</font></font></a></li>
+				<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;cat=people&amp;page=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pessoas</font></font></a></li>
+				<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;cat=photographic&amp;page=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Fotográfico</font></font></a></li>
+				<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;cat=places&amp;page=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Lugares</font></font></a></li>
+				<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;cat=scifi&amp;page=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ficção Científica</font></font></a></li>
+				<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;cat=social-network&amp;page=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Rede social</font></font></a></li>
+				<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;cat=sport&amp;page=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Esporte</font></font></a></li>
+				<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;cat=system&amp;page=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sistema</font></font></a></li>
+				<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;cat=technology&amp;page=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tecnologia</font></font></a></li>
+				<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;cat=transport&amp;page=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Transporte</font></font></a></li>
+				<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;cat=movie&amp;page=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">TV e cinema</font></font></a></li>
+				<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;cat=vintage&amp;page=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Vintage</font></font></a></li>
+				
+				</ul>
+				</div>
+			</div>
+			<div class="settings-display-row-head"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Categoria:</font></font></div>
+			<div class="clear"></div>
+		</div>
+
+		<div class="settings-display-row">
+			<div class="settings-display-row-content">
+				<div class="filter-dropdown" style="width:130px;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+				Todo
+				</font></font><ul style="width:140px;">
+			<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;style=all&amp;page=1" class="active"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Todo</font></font></a></li>
+				<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;style=professional&amp;page=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Profissional</font></font></a></li>
+				<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;style=3d&amp;page=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3D</font></font></a></li>
+				<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;style=soft&amp;page=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Suave / Suave</font></font></a></li>
+				<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;style=bold&amp;page=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Negrito / Com Borda</font></font></a></li>
+				<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;style=pixelart&amp;page=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pixelart / Clássico</font></font></a></li>
+				<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;style=fun&amp;page=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Diversão / Desenho animado</font></font></a></li>
+				<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;style=handdrawn&amp;page=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Desenhado à mão</font></font></a></li>
+				<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;style=photorealistic&amp;page=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Fotorrealista</font></font></a></li>
+				
+				</ul>
+				</div>
+			</div>
+			<div class="settings-display-row-head"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Estilo:</font></font></div>
+			<div class="clear"></div>
+		</div>
+
+		<div class="settings-display-row">
+			<div class="settings-display-row-content">
+				<div class="filter-dropdown" style="width:120px;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+				Todo
+				</font></font><ul style="width:130px;">
+			<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;license=all&amp;page=1" class="active"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Todo</font></font></a></li>
+				<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;license=commercial&amp;page=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Comercial</font></font></a></li>
+				<li><a href="https://iconarchive.com/search?q=cat+black+white&amp;license=commercialfree&amp;page=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Livre comercial</font></font></a></li>
+				
+				</ul>
+				</div>
+			</div>
+			<div class="settings-display-row-head"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Licença:</font></font></div>
+			<div class="clear"></div>
+		</div>
+
+	</div>
+
+</div>
+<div id="layout-search-filter-switcher"></div>
+
+	<div id="layout-search-content">
+
+
+<div class="clear"></div><span id="ezoic-pub-ad-placeholder-122" class="ezoic-adpicker-ad"></span>
+
+			<div class="pagination-bar"><div class="pagination"><a href="https://iconarchive.com/search?q=cat+black+white#" class="prev-inactive"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">&lt; Anterior</font></font></a><a href="https://iconarchive.com/search?q=cat+black+white&amp;page=1" class="num-active"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1</font></font></a><a href="https://iconarchive.com/search?q=cat+black+white&amp;page=2" class="num"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2</font></font></a><a href="https://iconarchive.com/search?q=cat+black+white&amp;page=3" class="num"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3</font></font></a><a href="https://iconarchive.com/search?q=cat+black+white&amp;page=4" class="num"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">4</font></font></a><a href="https://iconarchive.com/search?q=cat+black+white&amp;page=5" class="num"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">5</font></font></a><a href="https://iconarchive.com/search?q=cat+black+white&amp;page=6" class="num"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">6</font></font></a><a href="https://iconarchive.com/search?q=cat+black+white#" class="dot"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">...</font></font></a><a href="https://iconarchive.com/search?q=cat+black+white&amp;page=60" class="num"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">60</font></font></a><a href="https://iconarchive.com/search?q=cat+black+white&amp;page=2" class="next"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Próximo &gt;</font></font></a></div>
+			<div class="intro"><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Resultados 1-24 de 1425 para o termo de pesquisa "gato preto branco"</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> .</font></font></div>
+			<div class="clear"></div>
+			</div>
+<div id="icon-57416-48" class="icondetail" style="height:170px;width:157px"><div class="links"><div class="fav" title="Adicionar aos favoritos"></div><div class="detail"><a href="https://iconarchive.com/download/i57416/fasticon/cat/Cat-Black-White.ico"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ICO </font></font></a><a href="https://iconarchive.com/download/i57416/fasticon/cat/Cat-Black-White.icns"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ICNS </font></font></a><a href="./iconegatospreto_files/Cat-Black-White-icon.png" class="lastitem"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">PNG</font></font></a></div><div class="clear"></div></div><a href="https://iconarchive.com/show/cat-icons-by-fasticon/Cat-Black-White-icon.html"><img src="./iconegatospreto_files/Cat-Black-White-icon.png" style="margin-top:3px" loading="lazy" width="128" height="128" alt="Ícone de gato preto branco" title="Ícone de gato preto branco"></a></div>
+<div id="icon-86412-48" class="icondetail" style="height:170px;width:157px"><div class="links"><div class="fav" title="Adicionar aos favoritos"></div><div class="detail"><a href="https://iconarchive.com/download/i86412/martin-berube/flat-animal/black-cat.ico"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ICO </font></font></a><a href="https://iconarchive.com/download/i86412/martin-berube/flat-animal/black-cat.icns"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ICNS </font></font></a><a href="./iconegatospreto_files/black-cat-icon.png" class="lastitem"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">PNG</font></font></a></div><div class="clear"></div></div><a href="https://iconarchive.com/show/flat-animal-icons-by-martin-berube/black-cat-icon.html"><img src="./iconegatospreto_files/black-cat-icon.png" style="margin-top:3px" loading="lazy" width="128" height="128" alt="ícone de gato preto" title="ícone de gato preto"></a></div>
+<div id="icon-63490-48" class="icondetail" style="height:170px;width:157px"><div class="links"><div class="fav" title="Adicionar aos favoritos"></div><div class="detail"><a href="https://iconarchive.com/download/i63490/gcds/halloween/black-cat.ico"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ICO </font></font></a><a href="https://iconarchive.com/download/i63490/gcds/halloween/black-cat.icns"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ICNS </font></font></a><a href="./iconegatospreto_files/black-cat-icon(1).png" class="lastitem"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">PNG</font></font></a></div><div class="clear"></div></div><a href="https://iconarchive.com/show/halloween-icons-by-gcds/black-cat-icon.html"><img src="./iconegatospreto_files/black-cat-icon(1).png" style="margin-top:3px" loading="lazy" width="128" height="128" alt="ícone de gato preto" title="ícone de gato preto"></a></div>
+<div id="icon-95569-48" class="icondetail" style="height:170px;width:157px"><div class="links"><div class="fav" title="Adicionar aos favoritos"></div><div class="detail"><a href="https://iconarchive.com/download/i95569/iconsmind/outline/Black-Cat.ico"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ICO </font></font></a><a href="https://iconarchive.com/download/i95569/iconsmind/outline/Black-Cat.icns"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ICNS </font></font></a><a href="./iconegatospreto_files/black-cat-icon(2).png" class="lastitem"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">PNG</font></font></a></div><div class="clear"></div></div><a href="https://iconarchive.com/show/outline-icons-by-iconsmind/Black-Cat-icon.html"><img src="./iconegatospreto_files/black-cat-icon(2).png" style="margin-top:3px" loading="lazy" width="128" height="128" alt="ícone do gato preto" title="ícone do gato preto"></a></div>
+<div id="icon-57417-48" class="icondetail" style="height:170px;width:157px"><div class="links"><div class="fav" title="Adicionar aos favoritos"></div><div class="detail"><a href="https://iconarchive.com/download/i57417/fasticon/cat/Cat-Black.ico"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ICO </font></font></a><a href="https://iconarchive.com/download/i57417/fasticon/cat/Cat-Black.icns"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ICNS </font></font></a><a href="./iconegatospreto_files/Cat-Black-icon.png" class="lastitem"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">PNG</font></font></a></div><div class="clear"></div></div><a href="https://iconarchive.com/show/cat-icons-by-fasticon/Cat-Black-icon.html"><img src="./iconegatospreto_files/Cat-Black-icon.png" style="margin-top:3px" loading="lazy" width="128" height="128" alt="Ícone de gato preto" title="Ícone de gato preto"></a></div>
+<div id="icon-64857-48" class="icondetail" style="height:170px;width:157px"><div class="links"><div class="fav" title="Adicionar aos favoritos"></div><div class="detail"><a href="https://iconarchive.com/download/i64857/dapino/halloween-stamps/stamp-black-cat-eyes.ico"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ICO </font></font></a><a href="https://iconarchive.com/download/i64857/dapino/halloween-stamps/stamp-black-cat-eyes.icns"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ICNS </font></font></a><a href="./iconegatospreto_files/stamp-black-cat-eyes-icon.png" class="lastitem"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">PNG</font></font></a></div><div class="clear"></div></div><a href="https://iconarchive.com/show/halloween-stamps-icons-by-dapino/stamp-black-cat-eyes-icon.html"><img src="./iconegatospreto_files/stamp-black-cat-eyes-icon.png" style="margin-top:3px" loading="lazy" width="128" height="128" alt="Carimbe o ícone de olhos de gato preto" title="Carimbe o ícone de olhos de gato preto"></a></div>
+<div id="icon-88238-48" class="icondetail" style="height:170px;width:157px"><div class="links"><div class="fav" title="Adicionar aos favoritos"></div><div class="detail"><a href="https://iconarchive.com/download/i88238/icons8/ios7/Holidays-Black-Cat.ico"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ICO </font></font></a><a href="https://iconarchive.com/download/i88238/icons8/ios7/Holidays-Black-Cat.icns"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ICNS </font></font></a><a href="./iconegatospreto_files/Holidays-Black-Cat-icon.png" class="lastitem"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">PNG</font></font></a></div><div class="clear"></div></div><a href="https://iconarchive.com/show/ios7-icons-by-icons8/Holidays-Black-Cat-icon.html"><img src="./iconegatospreto_files/Holidays-Black-Cat-icon.png" style="margin-top:3px" loading="lazy" width="128" height="128" alt="Feriados ícone do gato preto" title="Feriados ícone do gato preto"></a></div>
+<div id="icon-90901-48" class="icondetail" style="height:170px;width:157px"><div class="links"><div class="fav" title="Adicionar aos favoritos"></div><div class="detail"><a href="https://iconarchive.com/download/i90901/icons8/windows-8/Holidays-Black-Cat.ico"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ICO </font></font></a><a href="https://iconarchive.com/download/i90901/icons8/windows-8/Holidays-Black-Cat.icns"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ICNS </font></font></a><a href="./iconegatospreto_files/Holidays-Black-Cat-icon(1).png" class="lastitem"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">PNG</font></font></a></div><div class="clear"></div></div><a href="https://iconarchive.com/show/windows-8-icons-by-icons8/Holidays-Black-Cat-icon.html"><img src="./iconegatospreto_files/Holidays-Black-Cat-icon(1).png" style="margin-top:3px" loading="lazy" width="128" height="128" alt="Feriados ícone do gato preto" title="Feriados ícone do gato preto"></a></div>
+<div id="icon-33542-48" class="icondetail" style="height:170px;width:157px"><div class="links"><div class="fav" title="Adicionar aos favoritos"></div><div class="detail"><a href="https://iconarchive.com/download/i33542/yellowicon/halloween/Black-Cat.ico"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ICO </font></font></a><a href="https://iconarchive.com/download/i33542/yellowicon/halloween/Black-Cat.icns"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ICNS </font></font></a><a href="./iconegatospreto_files/black-cat-icon(3).png" class="lastitem"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">PNG</font></font></a></div><div class="clear"></div></div><a href="https://iconarchive.com/show/halloween-icons-by-yellowicon/Black-Cat-icon.html"><img src="./iconegatospreto_files/black-cat-icon(3).png" style="margin-top:3px" loading="lazy" width="128" height="128" alt="ícone do gato preto" title="ícone do gato preto"></a></div>
+<div id="icon-106971-48" class="icondetail" style="height:170px;width:157px"><div class="links"><div class="fav" title="Adicionar aos favoritos"></div><div class="detail"><a href="https://iconarchive.com/download/i106971/pixelpress/superstition/Black-Cat.ico"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ICO </font></font></a><a href="https://iconarchive.com/download/i106971/pixelpress/superstition/Black-Cat.icns"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ICNS </font></font></a><a href="./iconegatospreto_files/black-cat-icon(4).png" class="lastitem"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">PNG</font></font></a></div><div class="clear"></div></div><a href="https://iconarchive.com/show/superstition-icons-by-pixelpress/Black-Cat-icon.html"><img src="./iconegatospreto_files/black-cat-icon(4).png" style="margin-top:3px" loading="lazy" width="128" height="128" alt="ícone do gato preto" title="ícone do gato preto"></a></div>
+<div id="icon-19134-32" class="icondetail" style="height:170px;width:157px"><div class="links"><div class="fav" title="Adicionar aos favoritos"></div><div class="detail"><a href="./iconegatospreto_files/Black-cat-02-icon.png" class="lastitem"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">PNG</font></font></a></div><div class="clear"></div></div><a href="https://iconarchive.com/show/halloween-icons-by-iconstreet/Black-cat-02-icon.html"><img src="./iconegatospreto_files/Black-cat-02-icon.png" style="margin-top:51px" loading="lazy" width="32" height="32" alt="ícone do gato preto 02" title="ícone do gato preto 02"></a></div>
+<div id="icon-19138-32" class="icondetail" style="height:170px;width:157px"><div class="links"><div class="fav" title="Adicionar aos favoritos"></div><div class="detail"><a href="./iconegatospreto_files/Black-cat-01-icon.png" class="lastitem"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">PNG</font></font></a></div><div class="clear"></div></div><a href="https://iconarchive.com/show/halloween-icons-by-iconstreet/Black-cat-01-icon.html"><img src="./iconegatospreto_files/Black-cat-01-icon.png" style="margin-top:51px" loading="lazy" width="32" height="32" alt="ícone do gato preto 01" title="ícone do gato preto 01"></a></div>
+<div id="icon-19145-32" class="icondetail" style="height:170px;width:157px"><div class="links"><div class="fav" title="Adicionar aos favoritos"></div><div class="detail"><a href="./iconegatospreto_files/Black-cat-00-icon.png" class="lastitem"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">PNG</font></font></a></div><div class="clear"></div></div><a href="https://iconarchive.com/show/halloween-icons-by-iconstreet/Black-cat-00-icon.html"><img src="./iconegatospreto_files/Black-cat-00-icon.png" style="margin-top:51px" loading="lazy" width="32" height="32" alt="ícone do gato preto 00" title="ícone do gato preto 00"></a></div>
+<div id="icon-82515-48" class="icondetail" style="height:170px;width:157px"><div class="links"><div class="fav" title="Adicionar aos favoritos"></div><div class="detail"><a href="https://iconarchive.com/download/i82515/iconka/saint-whiskers/cat-cupid-love.ico"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ICO </font></font></a><a href="https://iconarchive.com/download/i82515/iconka/saint-whiskers/cat-cupid-love.icns"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ICNS </font></font></a><a href="./iconegatospreto_files/cat-cupid-love-icon.png" class="lastitem"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">PNG</font></font></a></div><div class="clear"></div></div><a href="https://iconarchive.com/show/saint-whiskers-icons-by-iconka/cat-cupid-love-icon.html"><img src="./iconegatospreto_files/cat-cupid-love-icon.png" style="margin-top:3px" loading="lazy" width="128" height="128" alt="Ícone de amor de cupido de gato" title="Ícone de amor de cupido de gato"></a></div>
+<div id="icon-82516-48" class="icondetail" style="height:170px;width:157px"><div class="links"><div class="fav" title="Adicionar aos favoritos"></div><div class="detail"><a href="https://iconarchive.com/download/i82516/iconka/saint-whiskers/cat-food-hearts.ico"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ICO </font></font></a><a href="https://iconarchive.com/download/i82516/iconka/saint-whiskers/cat-food-hearts.icns"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ICNS </font></font></a><a href="./iconegatospreto_files/cat-food-hearts-icon.png" class="lastitem"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">PNG</font></font></a></div><div class="clear"></div></div><a href="https://iconarchive.com/show/saint-whiskers-icons-by-iconka/cat-food-hearts-icon.html"><img src="./iconegatospreto_files/cat-food-hearts-icon.png" style="margin-top:3px" loading="lazy" width="128" height="128" alt="Ícone de corações de comida de gato" title="Ícone de corações de comida de gato"></a></div>
+<div id="icon-57420-48" class="icondetail" style="height:170px;width:157px"><div class="links"><div class="fav" title="Adicionar aos favoritos"></div><div class="detail"><a href="https://iconarchive.com/download/i57420/fasticon/cat/Cat-Orange.ico"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ICO </font></font></a><a href="https://iconarchive.com/download/i57420/fasticon/cat/Cat-Orange.icns"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ICNS </font></font></a><a href="./iconegatospreto_files/Cat-Orange-icon.png" class="lastitem"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">PNG</font></font></a></div><div class="clear"></div></div><a href="https://iconarchive.com/show/cat-icons-by-fasticon/Cat-Orange-icon.html"><img src="./iconegatospreto_files/Cat-Orange-icon.png" style="margin-top:3px" loading="lazy" width="128" height="128" alt="Ícone de gato laranja" title="Ícone de gato laranja"></a></div>
+<div id="icon-78693-48" class="icondetail" style="height:170px;width:157px"><div class="links"><div class="fav" title="Adicionar aos favoritos"></div><div class="detail"><a href="https://iconarchive.com/download/i78693/iconka/meow-2/cat-sleep.ico"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ICO </font></font></a><a href="https://iconarchive.com/download/i78693/iconka/meow-2/cat-sleep.icns"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ICNS </font></font></a><a href="./iconegatospreto_files/cat-sleep-icon.png" class="lastitem"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">PNG</font></font></a></div><div class="clear"></div></div><a href="https://iconarchive.com/show/meow-2-icons-by-iconka/cat-sleep-icon.html"><img src="./iconegatospreto_files/cat-sleep-icon.png" style="margin-top:3px" loading="lazy" width="128" height="128" alt="ícone do sono do gato" title="ícone do sono do gato"></a></div>
+<div id="icon-67055-48" class="icondetail" style="height:170px;width:157px"><div class="links"><div class="fav" title="Adicionar aos favoritos"></div><div class="detail"><a href="https://iconarchive.com/download/i67055/iconcreme/halloween/Cat.ico"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ICO </font></font></a><a href="https://iconarchive.com/download/i67055/iconcreme/halloween/Cat.icns"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ICNS </font></font></a><a href="./iconegatospreto_files/Cat-icon.png" class="lastitem"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">PNG</font></font></a></div><div class="clear"></div></div><a href="https://iconarchive.com/show/halloween-icons-by-iconcreme/Cat-icon.html"><img src="./iconegatospreto_files/Cat-icon.png" style="margin-top:3px" loading="lazy" width="128" height="128" alt="ícone de gato" title="ícone de gato"></a></div>
+<div id="icon-57421-48" class="icondetail" style="height:170px;width:157px"><div class="links"><div class="fav" title="Adicionar aos favoritos"></div><div class="detail"><a href="https://iconarchive.com/download/i57421/fasticon/cat/Cat-Pink.ico"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ICO </font></font></a><a href="https://iconarchive.com/download/i57421/fasticon/cat/Cat-Pink.icns"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ICNS </font></font></a><a href="./iconegatospreto_files/Cat-Pink-icon.png" class="lastitem"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">PNG</font></font></a></div><div class="clear"></div></div><a href="https://iconarchive.com/show/cat-icons-by-fasticon/Cat-Pink-icon.html"><img src="./iconegatospreto_files/Cat-Pink-icon.png" style="margin-top:3px" loading="lazy" width="128" height="128" alt="Ícone de gato rosa" title="Ícone de gato rosa"></a></div>
+<div id="icon-78688-48" class="icondetail" style="height:170px;width:157px"><div class="links"><div class="fav" title="Adicionar aos favoritos"></div><div class="detail"><a href="https://iconarchive.com/download/i78688/iconka/meow-2/cat-laptop.ico"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ICO </font></font></a><a href="https://iconarchive.com/download/i78688/iconka/meow-2/cat-laptop.icns"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ICNS </font></font></a><a href="./iconegatospreto_files/cat-laptop-icon.png" class="lastitem"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">PNG</font></font></a></div><div class="clear"></div></div><a href="https://iconarchive.com/show/meow-2-icons-by-iconka/cat-laptop-icon.html"><img src="./iconegatospreto_files/cat-laptop-icon.png" style="margin-top:3px" loading="lazy" width="128" height="128" alt="ícone de laptop de gato" title="ícone de laptop de gato"></a></div>
+<div id="icon-79965-48" class="icondetail" style="height:170px;width:157px"><div class="links"><div class="fav" title="Adicionar aos favoritos"></div><div class="detail"><a href="https://iconarchive.com/download/i79965/iconka/cat-secrets/cat-plain.ico"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ICO </font></font></a><a href="https://iconarchive.com/download/i79965/iconka/cat-secrets/cat-plain.icns"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ICNS </font></font></a><a href="./iconegatospreto_files/cat-plain-icon.png" class="lastitem"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">PNG</font></font></a></div><div class="clear"></div></div><a href="https://iconarchive.com/show/cat-secrets-icons-by-iconka/cat-plain-icon.html"><img src="./iconegatospreto_files/cat-plain-icon.png" style="margin-top:3px" loading="lazy" width="128" height="128" alt="ícone simples de gato" title="ícone simples de gato"></a></div>
+<div id="icon-78374-48" class="icondetail" style="height:170px;width:157px"><div class="links"><div class="fav" title="Adicionar aos favoritos"></div><div class="detail"><a href="https://iconarchive.com/download/i78374/iconka/meow/cat-purr.ico"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ICO </font></font></a><a href="https://iconarchive.com/download/i78374/iconka/meow/cat-purr.icns"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ICNS </font></font></a><a href="./iconegatospreto_files/cat-purr-icon.png" class="lastitem"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">PNG</font></font></a></div><div class="clear"></div></div><a href="https://iconarchive.com/show/meow-icons-by-iconka/cat-purr-icon.html"><img src="./iconegatospreto_files/cat-purr-icon.png" style="margin-top:3px" loading="lazy" width="128" height="128" alt="ícone de ronronar de gato" title="ícone de ronronar de gato"></a></div>
+<div id="icon-82517-48" class="icondetail" style="height:170px;width:157px"><div class="links"><div class="fav" title="Adicionar aos favoritos"></div><div class="detail"><a href="https://iconarchive.com/download/i82517/iconka/saint-whiskers/cat-fridge.ico"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ICO </font></font></a><a href="https://iconarchive.com/download/i82517/iconka/saint-whiskers/cat-fridge.icns"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ICNS </font></font></a><a href="./iconegatospreto_files/cat-fridge-icon.png" class="lastitem"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">PNG</font></font></a></div><div class="clear"></div></div><a href="https://iconarchive.com/show/saint-whiskers-icons-by-iconka/cat-fridge-icon.html"><img src="./iconegatospreto_files/cat-fridge-icon.png" style="margin-top:3px" loading="lazy" width="128" height="128" alt="ícone de geladeira de gato" title="ícone de geladeira de gato"></a></div>
+<div id="icon-57418-48" class="icondetail" style="height:170px;width:157px"><div class="links"><div class="fav" title="Adicionar aos favoritos"></div><div class="detail"><a href="https://iconarchive.com/download/i57418/fasticon/cat/Cat-Brown.ico"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ICO </font></font></a><a href="https://iconarchive.com/download/i57418/fasticon/cat/Cat-Brown.icns"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ICNS </font></font></a><a href="./iconegatospreto_files/Cat-Brown-icon.png" class="lastitem"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">PNG</font></font></a></div><div class="clear"></div></div><a href="https://iconarchive.com/show/cat-icons-by-fasticon/Cat-Brown-icon.html"><img src="./iconegatospreto_files/Cat-Brown-icon.png" style="margin-top:3px" loading="lazy" width="128" height="128" alt="Ícone de gato marrom" title="Ícone de gato marrom"></a></div>
+<div class="clear"></div>
+			<div class="pagination-bar"><div class="pagination"><a href="https://iconarchive.com/search?q=cat+black+white#" class="prev-inactive"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">&lt; Anterior</font></font></a><a href="https://iconarchive.com/search?q=cat+black+white&amp;page=1" class="num-active"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1</font></font></a><a href="https://iconarchive.com/search?q=cat+black+white&amp;page=2" class="num"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2</font></font></a><a href="https://iconarchive.com/search?q=cat+black+white&amp;page=3" class="num"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3</font></font></a><a href="https://iconarchive.com/search?q=cat+black+white&amp;page=4" class="num"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">4</font></font></a><a href="https://iconarchive.com/search?q=cat+black+white&amp;page=5" class="num"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">5</font></font></a><a href="https://iconarchive.com/search?q=cat+black+white&amp;page=6" class="num"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">6</font></font></a><a href="https://iconarchive.com/search?q=cat+black+white#" class="dot"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">...</font></font></a><a href="https://iconarchive.com/search?q=cat+black+white&amp;page=60" class="num"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">60</font></font></a><a href="https://iconarchive.com/search?q=cat+black+white&amp;page=2" class="next"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Próximo &gt;</font></font></a></div>
+			<div class="intro"><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Resultados 1-24 de 1425 para o termo de pesquisa "gato preto branco"</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> .</font></font></div>
+			<div class="clear"></div>
+			</div><div class="clear"></div></div> <!--column-main-->
+
+<div class="clear"></div>
+</div> <!--allcontent-->
+
+
+
+<div style="text-align:center;">
+
+<!-- Ezoic - bottom_of_page 108 - bottom_of_page -->
+<span id="ezoic-pub-ad-placeholder-108"></span>
+<!-- End Ezoic - bottom_of_page 108 - bottom_of_page -->
+
+</div>
+
+<br>
+<div id="footer">
+<ul id="bottomnav">
+	<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">© 2022 IconArchive.com</font></font></li>
+	<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">| </font></font><a href="https://iconarchive.com/about.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sobre</font></font></a></li>
+	<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">| </font></font><a href="https://iconarchive.com/contact.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Contato</font></font></a></li>
+	<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">| </font></font><a href="https://iconarchive.com/privacy.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Política de Privacidade</font></font></a></li>
+	<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">| </font></font><a href="https://iconarchive.com/terms.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Termos de serviços</font></font></a></li>
+</ul><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+
+
+Novo: </font></font><a href="https://funny-wifi.com/" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">nomes engraçados de WiFi</font></font></a>
+
+
+
+
+
+
+
+</div>
+
+
+<div class="flyingheart"></div>
+<div id="metanav-favbar">
+	<div id="metanav-favbar-toggle" title="Abrir / Fechar FavBar"></div>
+	<div class="metanav-favbar-arrow" title="Mostrar meus favoritos"><a href="https://iconarchive.com/mydesk.html"></a></div>
+	<div class="metanav-favbar-content">
+    	<ul class="metanav-favbar-list"></ul>
+	</div>
+</div>
+
+<script type="text/javascript" src="./iconegatospreto_files/jquery.min.js.download"></script>
+<script type="text/javascript" src="./iconegatospreto_files/jquery.plugins.js.download"></script>
+<script type="text/javascript" src="./iconegatospreto_files/main.min.js.download"></script>
+
+<!--[selectrongo:done]--><script type="text/javascript">(function(f,a){function g(b,a,c){b.addEventListener?b.addEventListener(a,c):b.attachEvent("on"+a,function(){c.call(b)})}function k(b){b&&("string"==typeof b["class"]&&b["class"]&&a.getElementById("uglipop_popbox").setAttribute("class",b["class"]),b.keepLayout&&!b["class"]&&a.getElementById("uglipop_popbox").setAttribute("style","position:relative;height:300px;width:300px;background-color:white;opacity:1;"),"string"==typeof b.content&&b.content&&"html"==b.source&&(a.getElementById("uglipop_popbox").innerHTML=b.content),"string"==typeof b.content&&b.content&&"div"==b.source&&(a.getElementById("uglipop_popbox").innerHTML=a.getElementById(b.content).innerHTML));a.getElementById("uglipop_overlay_wrapper").style.display="";a.getElementById("uglipop_overlay").style.display="";a.getElementById("uglipop_content_fixed").style.display=""}function h(){a.getElementById("uglipop_overlay_wrapper").style.display="none";a.getElementById("uglipop_overlay").style.display="none";a.getElementById("uglipop_content_fixed").style.display="none"}g(a,"DOMContentLoaded",function(){var b=a.createElement("div"),e=a.createElement("div"),c=a.createElement("div"),d=a.createElement("div");e.id="uglipop_content_fixed";e.setAttribute("style","position:fixed;top: 50%;left: 50%;transform: translate(-50%, -50%);-webkit-transform: translate(-50%, -50%);-ms-transform: translate(-50%, -50%);opacity:1;z-index:10000000;");c.id="uglipop_popbox";d.id="uglipop_overlay_wrapper";d.setAttribute("style","position:absolute;top:0;bottom:0;left:0;right:0;display:none");b.id="uglipop_overlay";b.setAttribute("style","position:fixed;top:0;bottom:0;left:0;right:0;opacity:0.3;width:100%;height:100%;background-color:black;");d.appendChild(b);e.appendChild(c);a.body.appendChild(d);a.body.appendChild(e);a.getElementById("uglipop_overlay_wrapper").style.display="none";a.getElementById("uglipop_overlay").style.display="none";a.getElementById("uglipop_content_fixed").style.display="none";d.addEventListener("click",h);g(f,"keydown",function(a){27==a.keyCode&&h()});f.uglipop=k})})(window,document);var ezRBA=(function(){function init(){var reportAdsBtns=document.querySelectorAll('.ez-report-ad-button');for(var i=0;i<reportAdsBtns.length;i++){reportAdsBtns[i].addEventListener('click',function(e){var url='<iframe src="https://svc.ezoic.com/pub/reportads/reportads.html'+e.target.getAttribute('name')+'" width="400" height="500" style="border-radius: 10px; box-shadow: 2px 2px 30px 6px rgba(0,0,0,0.75); border: 1px solid black;"></iframe>'
+uglipop({class:'none',source:'html',content:url,});});}
+function bindEvent(element,eventName,eventHandler){if(element.addEventListener){element.addEventListener(eventName,eventHandler,false);}else if(element.attachEvent){element.attachEvent('on'+eventName,eventHandler);}}
+bindEvent(window,'message',function(e){if(e.data==='close-report-ad-modal'){document.getElementById('uglipop_overlay_wrapper').style.display='none';document.getElementById('uglipop_overlay').style.display='none';document.getElementById('uglipop_content_fixed').style.display='none';}})}
+return{init:init};})();ezRBA.init();</script>
+<script type="text/javascript" data-cfasync="false"></script>
+<script type="text/javascript" style="display:none;">var __ez_dims = (function() {
+		var setCookie = function( name, content, expiry ) {
+			return document.cookie = name+'='+content+((expiry)?';expires='+(new Date(Math.floor(new Date().getTime()+expiry*1000)).toUTCString()):'')+';path=/';
+		};
+		var ffid = 1;
+		var oh = window.screen.height;
+		var ow = window.screen.width;
+		var h = ffid === 1 ? oh : (oh > ow) ? oh : ow;
+		var w = ffid === 1 ? ow : (oh > ow) ? ow : oh;
+		var uh = window.innerHeight || document.documentElement.clientHeight || document.getElementsByTagName('body')[0].clientHeight;
+		var uw = window.innerWidth || document.documentElement.clientWidth || document.getElementsByTagName('body')[0].clientWidth;
+		setCookie('ezds', encodeURIComponent('ffid='+ffid+',w='+w+',h='+h), (31536e3*7));
+		setCookie('ezohw', encodeURIComponent('w='+uw+',h='+uh), (31536e3*7));
+	})();</script><script type="text/javascript" style="display:none;" async="">
+</script>
+<div id="uglipop_overlay_wrapper" style="position:absolute;top:0;bottom:0;left:0;right:0;display:none"><div id="uglipop_overlay" style="position: fixed; inset: 0px; opacity: 0.3; width: 100%; height: 100%; background-color: black; display: none;"></div></div><div id="goog-gt-tt" class="skiptranslate" dir="ltr"><div style="padding: 8px;"><div><div class="logo"><img src="./iconegatospreto_files/translate_24dp.png" width="20" height="20" alt="Google Tradutor"></div></div></div><div class="top" style="padding: 8px; float: left; width: 100%;"><h1 class="title gray">Texto original</h1></div><div class="middle" style="padding: 8px;"><div class="original-text"></div></div><div class="bottom" style="padding: 8px;"><div class="activity-links"><span class="activity-link">Sugerir uma tradução melhor</span><span class="activity-link"></span></div><div class="started-activity-container"><hr style="color: #CCC; background-color: #CCC; height: 1px; border: none;"><div class="activity-root"></div></div></div><div class="status-message" style="display: none;"></div></div><div id="uglipop_content_fixed" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); opacity: 1; z-index: 10000000; display: none;"><div id="uglipop_popbox"></div></div><div class="goog-te-spinner-pos"><div class="goog-te-spinner-animation"><svg xmlns="http://www.w3.org/2000/svg" class="goog-te-spinner" width="96px" height="96px" viewBox="0 0 66 66"><circle class="goog-te-spinner-path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div></div></body></html>
